@@ -1,0 +1,38 @@
+header.header
+    .container.header__container
+        p.logo bouncy
+        nav.main__menu
+            - var classes = ["menu__item", "menu__item_hovered"]
+            ul.menu
+                li(class=classes) 
+                    a(class="menu__link" href="#start-anchor") Hello
+                li(class=classes)
+                    a(class="menu__link" href="#about-anchor") About
+                li(class=classes)
+                    a(class="menu__link" href="#services-anchor") Services
+                li(class=classes)
+                    a(class="menu__link" href="#portfolio-anchor") Portfolio
+                li(class=classes)
+                    a(class="menu__link" href="#team-anchor") Team
+                li(class=classes)
+                    a(class="menu__link" href="#blog-anchor") Blog
+                li(class=classes)
+                    a(class="menu__link" href="#contact-anchor") Contact
+        .header__burger-container
+                include ../../images/menu.svg
+        .header__mobile-menu-block
+            ul.menu.header__mobile-menu
+                li(class='menu__item') 
+                    a(class="menu__link menu__mobile-link" href="#start-anchor") Hello
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#about-anchor") About
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#services-anchor") Services
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#portfolio-anchor") Portfolio
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#team-anchor") Team
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#blog-anchor") Blog
+                li(class='menu__item')
+                    a(class="menu__link menu__mobile-link" href="#contact-anchor") Contact

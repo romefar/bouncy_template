@@ -1,0 +1,35 @@
+//-Mixin for section title
+//- caption = title text
+//- text = description text
+//- sub_class
+mixin section-header-block(caption, text, sub_class)
+    -var basic_class = "section-title"; 
+    if(sub_class == "")
+        div(class=basic_class)
+            .section-title-container
+                h2.section-title__caption= caption
+                p.section-title__text= text
+    else 
+        div(class=basic_class + " " + sub_class)
+            .section-title-container
+                h2.section-title__caption= caption
+                p.section-title__text= text
+
+mixin list-bg(svgName, altText)
+    img.icons-list__image(src="../images/" + svgName, alt=altText)
+
+mixin set-contact-img(imgName, altText)
+    img.contacts__image(src="../images/" + imgName, alt=altText)
+
+mixin set-svg(svgName, altText)
+    img.contacts__icon(src="../images/" + svgName, alt=altText)
+
+mixin set-portfolio-img(imgName, altText)
+    img.portfolio__image(src="../images/" + imgName, alt=altText)
+
+mixin set-team-image(imgName, altText)
+    img.team__image(src="../images/" + imgName, alt=altText)
+
+mixin set-service-svg(svgName, altText)
+    img.services__icon(src="../images/" + svgName, alt=altText)
+    

@@ -1,0 +1,35 @@
+section.contacts
+    a(href="#" id="contact-anchor")
+    .container
+        //- First param: section caption
+        //- Second param: section text
+        //- Thitd param: class(set section margin), if you don't need this, use "" instead of the class name. 
+        +section-header-block("contact us",'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium',"contacts__section-title")    
+        .contacts__items-container
+            .contacts__item
+                .contacts__image-container
+                    .contacts__first-image
+                        +set-svg("e-mail-envelope.svg", "message")
+                    //-+set-contact-img("email__bg.png","email")
+                .contacts__description-container
+                    h3.contacts__caption email
+                    a(class="contacts__text-link" href="mailto:hello@codecafe.com") hello@codecafe.com 
+                    a(class="contacts__text-link" href="mailto:personal@codecafe.com") personal@codecafe.com
+            .contacts__item
+                .contacts__image-container
+                    .contacts__second-image
+                        +set-svg("placeholder.svg", "mark")
+                    //-+set-contact-img("email__bg.png","email")
+                .contacts__description-container
+                    h3.contacts__caption our office
+                    p.contacts__text 240 Bhatikhana, 8200 Barisal
+                    p.contacts__text Bangladesh
+            .contacts__item
+                .contacts__image-container
+                    .contacts__third-image
+                        +set-svg("phone-call.svg", "phone")
+                    //-+set-contact-img("email__bg.png","email")
+                .contacts__description-container
+                    h3.contacts__caption phone
+                    a(class="contacts__text-link" href="tel:+00 11 66 99 66 44") +00 11 66 99 66 44
+                    a(class="contacts__text-link" href="tel:+11 99 66 44 065") +11 99 66 44 065

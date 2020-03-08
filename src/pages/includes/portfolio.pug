@@ -1,0 +1,167 @@
+section.portfolio
+    a(href="#" id="portfolio-anchor")
+    .container
+        //- First param: section caption
+        //- Second param: section text
+        //- Thitd param: class(set section margin), if you don't need this, use "" instead of the class name. 
+        +section-header-block("the portfolio",'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium',"portfolio__section-title")
+        -var classes = ["portfolio__list-item", "portfolio__list-item_hovered"]
+        -var text = ["all works", "print", "identity", "branding", "web", "html", "wordpress"]
+        ul.portfolio__list
+            each txt in text
+                li(class=classes)= txt
+        .portfolio__flex-container
+            .portfolio__first-col
+                .portfolio__item
+                    +set-portfolio-img("portfolio_1.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item
+                    +set-portfolio-img("portfolio_5.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item.portfolio__item-small-resize
+                    +set-portfolio-img("portfolio_9.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+            .portfolio__second-col
+                .portfolio__item.portfolio__item-small-resize
+                    +set-portfolio-img("portfolio_2.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item
+                    +set-portfolio-img("portfolio_6.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item
+                    +set-portfolio-img("portfolio_10.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+            .portfolio__third-col
+                .portfolio__item.portfolio__item-medium-resize
+                    +set-portfolio-img("portfolio_3.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item.portfolio__item-medium-resize
+                    +set-portfolio-img("portfolio_7.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item.portfolio__item-small-resize
+                    +set-portfolio-img("portfolio_11.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+            .portfolio__fouth-col
+                .portfolio__item
+                    +set-portfolio-img("portfolio_4.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg          
+                .portfolio__item.portfolio__item-medium-resize
+                    +set-portfolio-img("portfolio_8.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+                .portfolio__item.portfolio__item-medium-resize
+                    +set-portfolio-img("portfolio_12.png", "pocket")
+                    .portfolio__description-block.portfolio__description-block_hovered
+                        h3.portfolio__caption title here
+                        p.portfolio__text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        .portfolio__actions-block
+                            a(class="portfolio__share-block" href="#")
+                                .portfolio__share-image
+                                    include ../../images/link.svg
+                            a(class="portfolio__like-block" href="#")
+                                .portfolio__like-image
+                                    include ../../images/favorite.svg
+            .portfolio__project-block
+                .portfolio__project-bg-contaniner
+                    h3.portfolio__project-caption At vero eos et #[span.portfolio-strong-text accusamus] et iusto odio #[span.portfolio-strong-text dignissimos] ducimus qui 
+                    button.default-button.portfolio__default-button
+                        p.default-button__text Start Project
+        

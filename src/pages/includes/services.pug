@@ -1,0 +1,81 @@
+section.service
+    a(href="#" id="services-anchor")
+    .container
+        //- First param: section caption
+        //- Second param: section text
+        //- Thitd param: class(set section margin), if you don't need this, use "" instead of the class name. 
+        +section-header-block("our services",'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.',"services__section-title")
+        -var classes = ["service__list-item", "service__list-item_hovered"]
+        .service__content
+            ul.service__list 
+                li(class=classes)
+                    .service__image-container
+                        +set-service-svg("tools.svg", "tool")
+                li(class=classes)
+                    .service__image-container
+                        +set-service-svg("roller.svg", "roller")
+                li(class=classes)
+                    .service__image-container
+                        +set-service-svg("technology.svg", "tech")
+                li(class=classes)
+                    .service__image-container
+                        +set-service-svg("plug.svg", "plug")
+            .services__description
+                h2.service__caption graphic design
+                p.service__first-par At vero eos et accusamus et #[strong.service__colored-text iusto] odio dignissi- mos #[strong.service__strong-text ducimus] qui blanditiis praesentium volup- tatum deleniti
+                p.service__second-par quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, #[strong.service__colored-text similique sunt] in culpa qui officia deserunt mollitia animi, id est laborum et do- lorum fuga. 
+            <ul class="progress service__progress">
+                <li class="progress__item" data-name="branding" data-percent="80%"> 
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="6" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#19bd9a"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#19bd9a"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#19bd9a"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#19bd9a"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#19bd9a"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#19bd9a"/>
+                        </g>
+                    </svg> 
+                    <svg viewBox="-10 -10 220 220">
+                        <path  d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="503"></path>
+                    </svg>
+                    .progress__text-container
+                        p.progress__text 80#[span.progress__percent %]
+                </li>
+
+                <li class="progress__item" data-name="web design" data-percent="75%"> 
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="6" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#19bd9a"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#19bd9a"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#19bd9a"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#19bd9a"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#19bd9a"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#19bd9a"/>
+                        </g>
+                    </svg> 
+                    <svg viewBox="-10 -10 220 220">
+                        <path  d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="471"></path>
+                    </svg>
+                    .progress__text-container
+                        p.progress__text 75#[span.progress__percent %]
+                </li>
+
+                <li class="progress__item" data-name="UI/UX" data-percent="60%"> 
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="6" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#19bd9a"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#19bd9a"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#19bd9a"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#19bd9a"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#19bd9a"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#19bd9a"/>
+                        </g>
+                    </svg> 
+                    <svg viewBox="-10 -10 220 220">
+                        <path  d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="377"></path>
+                    </svg>
+                    .progress__text-container
+                        p.progress__text 60#[span.progress__percent %] 
+                </li>
+            </ul>
