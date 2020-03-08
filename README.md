@@ -9,3 +9,5 @@ Used technologies:
 
 2020 : updated gulpfile.js to the newest version.
 
+View : https://romefar.github.io/bouncy_template/
+
