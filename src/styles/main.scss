@@ -1,0 +1,127 @@
+@import 'includes/mixins';
+@import 'includes/fonts';
+
+html { 
+    font-size: 10px;
+}
+body { 
+    margin: 0;
+    padding: 0;
+ //   background-color: red;
+}
+
+    $style-none: empty; 
+    //Default font-stack for all elements
+    $font-stack:  Geneva, Tahoma, sans-serif;
+
+    //Default color for all elemetns 
+    $default-color: #fff; 
+
+    //Color for all captions/titles
+    $caption-color: #333b46;
+
+    //Color for main text
+    $main-text-color: #81868e;
+
+    //Color for subtitles 
+    $subtitle-color: #464646;
+
+    //Color for all default list items
+    $list-item-default-color: #81868e;
+
+    //Color for all hovered list items
+    $list-item-hovered-color: #19bd9a;
+
+    //Color for strong elements
+    $strong-text-color: #636971;
+
+    //Color for span elements 
+    $selection-color: #19bd9a;
+
+    //Color for currency value 
+    $currency-color: #1fbba6; 
+
+    //Color for input text
+    $subscribe-form-text-color: #cfd3d4; 
+
+    //Bg color for sections 
+    $section-bg: #f3f3f3;
+
+    //Color for team-quotes section
+    $team-quotes: #b2b3b3;
+    //Color for text portfolio
+    $portfolio-text-color: #b2b3b3;
+    $blog-subtitle-color: #b2b3b3;
+    //Footer logo color
+    $footer-logo-color: #323a45;
+
+    //default image block size
+    $default-image-item-size: 33.3%;
+
+    //Contact form border color
+    $contact-form-border-color: #d8dce0;
+
+    //Contact form text color
+    $contact-form-text-color: #a9a9a9;
+
+
+.container { 
+    margin: 0 auto;
+    width: 1170px;
+}
+
+@import 'includes/_header.scss';
+
+/* #region slider */
+@import 'includes/_top-slider.scss';
+/* #endregion slider*/
+
+/* #region about*/
+@import 'includes/_about.scss';
+/* #endregion about*/
+
+/* #region Details*/
+@import 'includes/_details';
+/* #endregion Details*/
+
+/* #region project*/
+@import 'includes/_projects';
+/* #endregion project*/
+
+/* #region offer*/
+@import 'includes/_offer';
+/* #endregion offer*/
+@import 'includes/_portfolio';
+@import 'includes/_team';
+@import 'includes/_teamCTA';
+@import 'includes/_testimonials';
+@import 'includes/_blog';
+@import 'includes/_services';
+/* #region quotes*/
+@import 'includes/_team_quotes';
+/* #endregion quotes*/
+
+/* #region Price*/
+@import 'includes/_price';
+/* #endregion Price*/
+
+/* #region subscribe*/
+@import 'includes/_subscribe';
+/* #endregion subscribe*/
+
+/* #region contacts*/
+@import 'includes/_contacts';
+/* #endregion contacts*/ 
+
+/* #region Contact form*/
+@import 'includes/_contact-form';
+/* #endregion Contact form*/
+
+/* #region map*/
+@import 'includes/_map';
+/* #endregion map*/
+
+/* #region footer*/
+@import 'includes/_footer';
+/* #endregion footer*/
+@import 'includes/_adaptive';

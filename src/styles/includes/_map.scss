@@ -1,0 +1,38 @@
+.map { 
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.85) inset;
+}
+.map__text-container { 
+    display: flex;
+    justify-content: center;
+}
+.map__text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0, 0 30px 0 0, $default-color, "Open Sans", 0.08rem, $style-none, uppercase);
+}
+.map__icon-block { 
+    display: flex;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    background-color: $selection-color;
+    border-radius: 50%;
+}
+.map__icon-container { 
+    width: 9px;
+    height: 9px;
+    align-self: center;
+}
+
+.map__icon { 
+    fill: $default-color;
+}
+
+.map__text-container { 
+    padding: 240px 0;
+}

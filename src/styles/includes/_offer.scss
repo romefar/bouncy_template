@@ -1,0 +1,41 @@
+.offer {
+    background-image: url("../images/offer_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer__bg-container { 
+    background-color: rgba(25, 189, 154, 0.85);
+}
+
+.offer__container { 
+    display: flex;
+    justify-content: space-between;
+}
+.offer__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 45px 0, 0, $default-color, "Open Sans", $style-none, $style-none, $style-none );
+}
+
+.offer__colored { 
+    font-family: "Open Sans Bold", $font-stack;
+}
+
+.default-button { 
+    outline: none;
+    padding: 0px;
+    background-color: transparent;
+    border: 1px solid $default-color;
+    border-radius: 30px;
+    height: 37px;
+    align-self: center;
+}
+
+.default-button__text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0,  6px 30px, $default-color, "Open Sans", $style-none, $style-none, capitalize);
+}

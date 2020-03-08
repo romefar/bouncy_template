@@ -1,0 +1,84 @@
+.contacts {
+    background-color: $section-bg;
+}
+
+.contacts__section-title {
+    @extend .subscribe__section-title;
+}
+
+.contacts__item {
+    min-width: 287px;
+    &:nth-child(2) { 
+        margin: 0 40px;
+    }
+}
+
+.contacts__image-container { 
+    display: flex;
+    justify-content: center;
+    min-height: 145px;
+}
+
+.contacts__icon {
+    align-self: center;
+    display: block;
+    //width: 44px;
+    height: 44px;
+}
+
+.contacts__items-container { 
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px;
+}
+
+.contacts__first-image { 
+    display: flex;
+    justify-content: center;
+    @include set-contact-image("email__bg.png");
+}
+
+.contacts__second-image { 
+    display: flex;
+    justify-content: center;
+    @include set-contact-image("office__bg.png");
+}
+
+.contacts__third-image { 
+    display: flex;
+    justify-content: center;
+    @include set-contact-image("phone__bg.png");
+}
+
+.contacts__description-container { 
+    background-color: $default-color;
+    //Import from .psd 
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05); 
+}
+
+.contacts__caption {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 30px 0 20px, 0, $subtitle-color, "Open Sans", 0.064rem, $style-none, uppercase);
+    font-weight: normal;
+}
+
+.contacts__text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0, $main-text-color, "Open Sans", $style-none, 2.4rem, uppercase);
+    &:last-of-type { 
+        padding: 0 0 25px;
+    }
+}
+
+.contacts__text-link {
+    @extend .contacts__text;
+    text-decoration: none;
+    display: block;
+    &:visited { 
+        color: $main-text-color;
+    }
+ }

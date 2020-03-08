@@ -1,0 +1,71 @@
+
+.slider { 
+    background-image: url("../images/slider__bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.slider__flex-container { 
+    display: flex;
+    justify-content: center;
+    padding: 290px 0 210px;
+}
+
+.slider__section-flex-container { 
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+    height: 20%;
+}
+
+.slider__title {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform) 
+    @include text-style(3.5rem, 0, 0 0 35px, $default-color, "SourceSansPro Light", 0.7rem, $style-none, uppercase); 
+    /* (X * S / 1000 = P), S - font size (px) in Photoshop, 
+                           X - letter spacing in Photoshop, 
+                           P - CSS letter spacing
+    */
+    //letter-spacing: 0.7rem;
+    font-weight: normal
+}
+
+.slider__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0,  0, $default-color, "Open Sans", 0.08rem, $style-none, $style-none); 
+    /* (X * S / 1000 = P), S - font size (px) in Photoshop, 
+                           X - letter spacing in Photoshop, 
+                           P - CSS letter spacing
+    */
+    //letter-spacing: 0.08rem;
+}
+
+.slider__button-container { 
+    display: flex;
+    justify-content: center;
+    padding: 0 0 70px;
+}
+
+.slider__icon-block { 
+    display: flex;
+   // flex-direction: column;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #19bd9a;
+    border-radius: 50%;
+}
+
+.slider__icon-container { 
+    width: 13px;
+    height: 13px;
+    align-self: center;
+}
+
+.slider__icon{ 
+    fill: $default-color;
+}

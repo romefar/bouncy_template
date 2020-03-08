@@ -1,0 +1,179 @@
+.blog { 
+    position: relative;
+    &:before { 
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        background-image: url("../images/blog__bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: grayscale(1);
+    }
+    &:after { 
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+.blog__slide-title { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 85px 0 0, 0 0 30px, $default-color, "SourceSansPro Light", 0.4rem, 2.6rem, uppercase);
+    font-weight: normal;
+    text-align: left;
+
+
+}
+
+
+.blog__slide-subtitle { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0 0 80px, $blog-subtitle-color, "Open Sans", 0.07rem, 2.6rem, $style-none);
+    text-align: left;
+    width: 40%;
+}
+
+$blog-slide-width: 1170px;
+
+.blog__slide { 
+    position: relative;
+    width: $blog-slide-width;
+    float: left;
+    &:last-child:after { 
+        content: "";
+        clear: both;
+    }
+}
+
+.blog__circle-list { 
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    padding: 0;
+}
+
+$circle-color: #b2b3b3;
+.blog__circle { 
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $circle-color;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.blog__circle_active { 
+    background-color: $circle-color;
+}
+
+
+
+.blog__items-container { 
+    width: $blog-slide-width * 3;
+    position: relative;
+    transition: 1s ease;
+}
+
+.blog__slider { 
+    height: 700px;
+    overflow: hidden;
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blog__video-item { 
+    padding: 0 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog__video { 
+    width: 70%;
+    min-height: 370px;
+}
+
+.blog__third-slide {
+    padding: 75px 0 100px;
+
+    & .blog__slide-title  {
+        padding: 0;
+    }
+    & .blog__slide-subtitle {
+        margin: 0;
+    }
+}
+.blog__item { 
+    padding: 0 0 0 70px;
+    width: 50%;
+}
+
+$blog-item-caption-color: #e1e4e9; 
+
+.blog__caption  { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 0, 0, $blog-item-caption-color, "Open Sans", 0.08rem, 2.6rem, capitalize);
+    font-weight: normal;
+    text-align: left;
+}
+
+.blog__author { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 7px 0, $main-text-color, "SourceSansPro Light Italic", 0.14rem, 2.6rem, uppercase);
+    text-align: left;
+}
+
+.blog__author-colored { 
+    color: $selection-color !important;
+}
+
+.blog__stats {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0 0 55px, $subtitle-color, "SourceSansPro Light", 0.14rem, 2.6rem, capitalize);
+    text-align: left;
+}
+
+.blog__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0 0 50px, $main-text-color, "Open Sans", 0.07rem, 2.6rem, $style-none);
+    text-align: left;
+}
+
+$blog-link-color: #b2b3b3;
+
+.blog__link { 
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+}
+
+.blog__full-article-link { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0 0 100px, 0, $blog-link-color, "Open Sans", $style-none, 2.2rem, capitalize);
+    text-align: left;
+}

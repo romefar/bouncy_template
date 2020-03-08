@@ -1,0 +1,126 @@
+.price__section-title { 
+    padding: 80px 0 55px;
+}
+.price { 
+    background-color: $section-bg;
+}
+.price__items-container { 
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px;
+}
+.price__item { 
+    flex: 0 1 235px;
+    background-color: $default-color;
+    position: relative;
+    overflow: hidden;
+    &:hover .price__first-layer_hovered{
+        margin-top: 303px;
+    }
+    &:nth-child(2) { 
+        margin: 0 65px;
+    }
+}
+.price__title { 
+    background-color: $list-item-hovered-color;
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 20px 0, 0, $default-color, "Open Sans Bold", $style-none, $style-none, uppercase);
+}
+.price__desciption-container  { 
+    display: flex;
+    flex-direction: column;
+    padding: 77px 0;
+    background-color: $default-color;
+}
+
+.price__mobile-title-container { 
+    display: none;
+}
+
+.price__mobile-title-container { 
+    background-color: $list-item-hovered-color;
+}
+
+.price__mobile-title { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 20px 0, 0, $default-color, "Open Sans Bold", $style-none, $style-none, uppercase);
+}
+
+.price__currency-symbol { 
+    background-image: url("../images/dollar-symbol.svg");
+    width: 35px;
+    height: 35px;
+}
+
+.price__currency-value {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(4.227rem, 0, 0, $currency-color, "SourceSansPro Black", $style-none, 5.5rem, $style-none);
+}
+
+.price__value-container { 
+    display: flex;
+    justify-content: center;
+    margin-left: -8px;
+}
+.price__text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 0, 0, $main-text-color, "Open Sans", 0.07rem, $style-none, capitalize);
+}
+
+
+.price__list { 
+    padding: 21px 0 40px 34px;
+    margin: 0;
+}
+
+.price__list-item {
+    list-style-type: none;
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0, $main-text-color, "Open Sans", $style-none, 2.9rem, capitalize);
+    text-align: left;
+}
+
+.price__offer-button { 
+    background-color: $list-item-hovered-color;
+    padding: 23px 0;
+}
+
+.price__offer-text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0, 0, $default-color, "Open Sans", $style-none, $style-none, capitalize);
+}
+
+.price__offer-link-items-container { 
+    display: flex;
+    justify-content: center;
+}
+
+.price__offer-icon {
+    background-image: url("../images/next.svg"); 
+    width: 11px;
+    height: 11px;
+    align-self: center;
+    margin: 0px 5px 0 10px;
+}
+
+.price__offer-link { 
+    text-decoration: none;
+}
+
+.price__first-layer {
+    position: absolute;
+    width: 100%;
+    transition: margin 2s; 
+}

@@ -1,0 +1,46 @@
+.about__description-block { 
+    flex: 0 1 440px;
+    margin: 140px 165px 100px 0;
+}
+
+.about__flex-container { 
+    display: flex;
+    justify-content: center;
+}
+.about__caption { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 0,  0 0 40px, $caption-color, "SourceSansPro Light", 0.4rem, $style-none, uppercase);
+    text-align: left;
+    font-weight: normal;
+}
+
+.about__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0 0 32px, $main-text-color, "Open Sans", $style-none, 2.6rem, $style-none);
+    text-align: left;
+}
+.about__button { 
+    outline: none;
+    padding: 0px;
+    background-color: $default-color;
+    border: 1px solid $caption-color;
+    border-radius: 30px;
+}
+.about__button-text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem,0,  6px 30px, $caption-color, "Open Sans", $style-none, $style-none, capitalize);
+}
+.about__photo-container { 
+    margin: 100px 0 75px 0;
+}
+.about__tablet-image { 
+   display: inline-block;
+   width: 100%;
+   height: auto;
+}

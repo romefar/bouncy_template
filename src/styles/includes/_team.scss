@@ -1,0 +1,197 @@
+$inner-bar-color: #e1e4e9;
+$outher-bar-color: #19bd9a;
+$team-layer-bg: rgba(249, 249, 249, 0.75);
+
+.team { 
+    background-color: $default-color;
+}
+
+.team__section-title { 
+    padding: 80px 0 65px;
+}
+
+.team__slide { 
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    min-width: 1170px;
+    //padding: 0 30px 0 0;
+    &:last-child { 
+        padding: 0;
+    }
+}
+
+.team__info-block { 
+    flex: 0 1 450px;
+}
+.team__title { 
+    border-right: 4px solid  $selection-color;
+    padding: 0 45px 0 0 ;
+}
+
+.team__person-name { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 0, 0, $subtitle-color, "Open Sans", 0.08rem, 2.6rem, capitalize);
+    text-align: right;
+    font-weight: normal;
+}
+
+.team__person-position { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0, 0 0 28px, $main-text-color, "SourceSansPro Light Italic", 0.14rem, 2.6rem, uppercase);
+    text-align: right;
+}
+
+.team__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 0 45px 0 0, 0 0 50px, $main-text-color, "Open Sans", 0.14rem, 2.6rem, $style-none);
+    text-align: right;
+}
+
+.team__bar-block { 
+    flex: 0 1 330px;
+    margin: 0 0 30px;
+    padding: 0 45px 0 0;
+}
+.team__progress-bar-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__progress-bar-caption { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0, 0, $main-text-color, "SourceSansPro Light", 0.16rem, 2.6rem, uppercase);
+}
+
+.team__progress-bar-state-value { 
+    @extend .team__progress-bar-caption;
+}
+
+.team__progress-bar { 
+    height: 4px;
+    background-color: $inner-bar-color;
+}
+
+.team__inner-bar {
+    width: 80%;
+    height: 4px;
+    background-color: $outher-bar-color;
+}
+
+.team__inner-bar-second { 
+    width: 65%;
+}
+.team__inner-bar-third { 
+    width: 75%;
+}
+.team__person-image { 
+    position: relative;
+    margin: 10px 40px 65px;
+}
+
+.team__socials-layer { 
+    display: none;
+    position: absolute;
+    top: 8px;
+    bottom: 11px;
+    left: 8px;
+    right: 8px;
+    // width: 100%;
+    // height: 100%;
+    //box-sizing: border-box;
+    //border: 8px solid transparent;
+    background-color: $team-layer-bg;
+}
+.team__socials-list-item { 
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team__socials-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//background: url("../images/twitter.svg") no-repeat center center;
+
+
+.team__slider { 
+    position: relative;
+    overflow: hidden;
+}
+
+$team-slide-width: 1170px;
+
+.team__slides-container { 
+    width: $team-slide-width * 3;
+    display: flex;
+    margin-left: 0;
+    transition: 1s ease;
+}
+
+.team__circle-list { 
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+
+$team_circle-color: #19bd9a;
+.team__circle { 
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $team_circle-color;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.team__circle_active { 
+    background-color: $team_circle-color;
+}
+
+.team__bar40 { 
+    width: 40% !important;
+}
+
+.team__bar55 { 
+    width: 55%;
+}
+
+.team__bar68 { 
+    width: 68% !important;
+}
+
+.team__bar90 { 
+    width: 90% !important;
+}
+
+.team__bar51 { 
+    width: 51% !important;
+}
+
+.team__bar40 { 
+    width: 40% !important;
+}
+
+.team__bar20 { 
+    width: 20%;
+}

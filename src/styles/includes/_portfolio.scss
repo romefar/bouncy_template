@@ -1,0 +1,189 @@
+.portfolio__section-title { 
+    padding: 80px 0;
+}
+.portfolio__list { 
+    padding:  0 0 38px 0;
+    margin: 0;
+    text-align: center; //!important;
+}
+
+.portfolio{
+    background-color: $section-bg;
+}
+
+.portfolio__list-item {
+    display: inline-block;
+    list-style-type: none;
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.6rem, 0 0 17px 0, 0 35px 0 0, $subtitle-color, "Open Sans", $style-none, $style-none, capitalize);
+    &:last-child { 
+        margin-right: 0;
+    }
+}
+.portfolio__list-item_hovered  { 
+        &:hover::after {
+        content: "";
+        display: block;
+        background-color: $selection-color;
+        width: 58%; //adaptive size
+        //width: 40px;
+        height: 2px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    &:hover { 
+        padding-bottom: 0;
+    }
+}
+
+.portfolio__flex-container { 
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__caption { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 0, 0, $selection-color, "SourceSansPro Light", 0.4rem, 2.6rem, uppercase);
+    text-align: left;
+    font-weight: normal;
+    &:after { 
+        content: "";
+        display: block;
+        width: 23px;
+        height: 1px;
+        background-color: $selection-color;
+        margin-top: 15px;
+    }
+}
+.portfolio__text { 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.2rem, 0, 25px 0 0, $portfolio-text-color, "Open Sans", $style-none, 2.2rem, $style-none);
+    text-align: left;
+}
+
+.portfolio__share-block { 
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.portfolio__like-block { 
+    @extend .portfolio__share-block;
+    margin: 0;
+}
+.portfolio__share-image { 
+    width: 14px;
+    height: 14px;
+    fill: $default-color;
+    align-self: center;
+}
+
+.portfolio__like-image { 
+    @extend .portfolio__share-image;
+}
+
+.portfolio__actions-block { 
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20%;   
+    padding: 55px 0 0;
+}
+.portfolio__item-small-resize { 
+    & .portfolio__description-block { 
+        padding-top: 20px;
+    }
+    & .portfolio__actions-block { 
+        padding-top: 20px;
+    }
+}
+.portfolio__item-medium-resize { 
+    & .portfolio__description-block { 
+        padding-top: 60px;
+    }
+    & .portfolio__actions-block { 
+        padding-top: 20px;
+    }
+}
+.portfolio__item { 
+    flex: 0 1 auto;
+    //height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    &:hover .portfolio__description-block_hovered{ 
+        display: block;
+    }
+    &:hover::before { 
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 5000px rgba(0, 0, 0, 0.8) inset;
+        position: absolute;
+        top: 0;
+    }
+    &:last-child { 
+        margin-bottom: 0;
+    }
+}
+.portfolio__description-block { 
+    display: none;
+    position: absolute;
+    padding: 80px 40px 0;
+    top: 0;
+}
+.portfolio__image { 
+    display: block;
+}
+
+.portfolio__first-col { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.portfolio__second-col { 
+    @extend .portfolio__first-col;
+}
+.portfolio__third-col { 
+    @extend .portfolio__first-col;
+}
+
+.portfolio__project-block {
+    background-image: url("../images/portfolio_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 40px 0 100px;
+}
+
+.portfolio__project-bg-contaniner { 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 189, 154, 0.85);
+    display: flex;
+    flex-direction: column;
+}
+.portfolio__project-caption{ 
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(2rem, 53px 0 0 0 , 0 0 30px, $default-color, "Open Sans", $style-none, 3.2rem, $style-none);
+    font-weight: normal;
+}
+.portfolio-strong-text { 
+    font-family: "Open Sans Bold", $font-stack;
+}
+.portfolio__default-button { 
+    margin: 0 0 53px;
+}

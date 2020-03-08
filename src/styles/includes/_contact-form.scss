@@ -1,0 +1,78 @@
+.contact-section__form { 
+    margin: 78px 0 130px;
+}
+.contact-section { 
+    background-color: $default-color;
+}
+
+.contact-section__container { 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 30px;
+}
+
+.contact-section__name-input { 
+    outline: none;
+    border: 1px solid $contact-form-border-color;
+    min-width: 287px;
+    box-sizing: border-box;
+    background-color: transparent;
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 10px 0 10px 25px, 0, $contact-form-text-color, "Open Sans", $style-none, $style-none, $style-none);
+    text-align: left;
+    &::-moz-placeholder {
+        opacity: 1;
+    }
+    &:-moz-placeholder { 
+        opacity: 1;
+    }
+    &::-webkit-input-placeholder {
+        opacity: 1;
+    }
+    &:-ms-input-placeholder { 
+        opacity: 1;
+    }
+}
+.contact-section__email-input { 
+    @extend .contact-section__name-input;
+}
+
+.contact-section__subject-input { 
+    @extend .contact-section__name-input;
+}
+.contact-section__textarea-container { 
+    padding: 0 0 25px;
+}
+.contact-section__text { 
+    width: 100%;
+    min-height: 190px;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    border: 1px solid $contact-form-border-color;
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 10px 10px, 0, $contact-form-text-color, "Open Sans", $style-none, $style-none, $style-none);
+    text-align: left;
+}
+.contact-section__container { 
+    width: 940px;
+}
+
+.contact-section__button {
+    background-color: $selection-color;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-section__button-text {
+    //text-style($fontsize, $text-padding, $text-margin, 
+    //$text-color, $text-family, $text-letter-spacing, 
+    //$text-line-height, $text-transform)
+    @include text-style(1.4rem, 10px 50px, 0, $default-color, "Open Sans", $style-none, $style-none, uppercase);
+}
